@@ -120,3 +120,5 @@ if [ -f ${SERVER_DIR}/logs/latest.log ]; then
 else
         tail -f ${SERVER_DIR}/masterLog.0
 fi
+
+./$(basename $0) && exit
